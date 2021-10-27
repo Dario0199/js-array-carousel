@@ -101,8 +101,8 @@ next.addEventListener ('click', function(){
 
 prev.addEventListener ('click', function(){
     // console.log('click');
-    // activeImage--;
-    // console.log('activeImage');
+    activeImage--;
+    console.log('activeImage');
     // aggiornare immagine
     //image
     //reset immagine e imposta nuova immagine
@@ -115,8 +115,8 @@ prev.addEventListener ('click', function(){
 
     document.getElementsByClassName('thumb')[activeImage].classList.add('active')
 
-    if (activeImage === imageCollection.lenght -5){
-        activeImage = imageCollection;
+    if (activeImage === imageCollection[0]){
+        activeImage = imageCollection[4];
     } else{
         activeImage--;
     }
